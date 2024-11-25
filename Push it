@@ -1,0 +1,161 @@
+# Essential Linux Commands Reference
+
+## **File and Directory Management**
+1. **`ls`** - List files and directories.
+   - Example: `ls -l` (detailed view), `ls -a` (shows hidden files)
+
+2. **`cd`** - Change directory.
+   - Example: `cd /path/to/directory`
+
+3. **`pwd`** - Print the current directory.
+   - Example: `pwd`
+
+4. **`mkdir`** - Create a new directory.
+   - Example: `mkdir new_folder`
+
+5. **`rm`** - Remove files or directories.
+   - Example: `rm file.txt`, `rm -r directory_name` (recursively)
+
+6. **`cp`** - Copy files or directories.
+   - Example: `cp file1.txt file2.txt`, `cp -r dir1 dir2`
+
+7. **`mv`** - Move or rename files.
+   - Example: `mv old_name.txt new_name.txt`
+
+8. **`touch`** - Create an empty file.
+   - Example: `touch new_file.txt`
+
+---
+
+## **File Content Manipulation**
+1. **`cat`** - View file content.
+   - Example: `cat file.txt`
+
+2. **`less`** / **`more`** - View large files one screen at a time.
+   - Example: `less file.txt`
+
+3. **`head`** - View the first few lines of a file.
+   - Example: `head file.txt`
+
+4. **`tail`** - View the last few lines of a file.
+   - Example: `tail file.txt`
+
+5. **`nano`** / **`vi`** / **`vim`** - Edit files.
+   - Example: `nano file.txt`
+
+6. **`wc`** - Word, line, and character count.
+   - Example: `wc -l file.txt` (line count)
+
+7. **`grep`** - Search for text in files.
+   - Example: `grep "search_term" file.txt`
+
+---
+
+## **Permissions and Ownership**
+1. **`chmod`** - Change file permissions.
+   - Example: `chmod 755 file.sh`
+
+2. **`chown`** - Change file ownership.
+   - Example: `chown user:group file.txt`
+
+3. **`ls -l`** - View file permissions.
+
+---
+
+## **Process Management**
+1. **`ps`** - Display running processes.
+   - Example: `ps aux`
+
+2. **`top`** / **`htop`** - Monitor system processes in real time.
+
+3. **`kill`** - Terminate a process.
+   - Example: `kill PID` (use the process ID from `ps` or `top`)
+
+4. **`jobs`** - Show background jobs.
+
+5. **`bg`** / **`fg`** - Move jobs to the background/foreground.
+
+---
+
+## **System Information**
+1. **`uname`** - Display system information.
+   - Example: `uname -a`
+
+2. **`df`** - Check disk space.
+   - Example: `df -h`
+
+3. **`du`** - Check directory size.
+   - Example: `du -sh /path/to/directory`
+
+4. **`free`** - Check memory usage.
+   - Example: `free -h`
+
+5. **`uptime`** - See system uptime.
+
+6. **`whoami`** - Display the current user.
+
+---
+
+## **Networking**
+1. **`ping`** - Test network connectivity.
+   - Example: `ping google.com`
+
+2. **`curl`** - Fetch data from URLs.
+   - Example: `curl https://example.com`
+
+3. **`wget`** - Download files.
+   - Example: `wget https://example.com/file.zip`
+
+4. **`ifconfig`** or **`ip addr`** - Display network interfaces.
+
+5. **`netstat`** - Display network connections (use `ss` in modern systems).
+
+---
+
+## **Package Management**
+1. **`apt`** - For Debian-based systems (Ubuntu).
+   - Example: `sudo apt update`, `sudo apt install package_name`
+
+2. **`yum`** or **`dnf`** - For Red Hat-based systems (CentOS).
+   - Example: `sudo yum install package_name`
+
+---
+
+## **Archiving and Compression**
+1. **`tar`** - Archive files.
+   - Example: `tar -czvf archive.tar.gz /path/to/files`
+
+2. **`zip`** / **`unzip`** - Compress or extract zip files.
+   - Example: `zip archive.zip file.txt`, `unzip archive.zip`
+
+3. **`gzip`** / **`gunzip`** - Compress or decompress files.
+   - Example: `gzip file.txt`, `gunzip file.txt.gz`
+
+---
+
+## **Searching**
+1. **`find`** - Search for files and directories.
+   - Example: `find /path -name "file.txt"`
+
+2. **`locate`** - Quickly find files (requires `updatedb`).
+   - Example: `locate file.txt`
+
+---
+
+## **Others**
+1. **`echo`** - Print text to the terminal.
+   - Example: `echo "Hello, World!"`
+
+2. **`history`** - Show command history.
+
+3. **`alias`** - Create command shortcuts.
+   - Example: `alias ll='ls -l'`
+
+4. **`clear`** - Clear the terminal screen.
+
+5. **`exit`** - Close the terminal.
+
+---
+
+These commands are essential for navigating, managing, and troubleshooting Linux systems. Use them as a reference to improve your efficiency and productivity!
+
